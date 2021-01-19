@@ -1,0 +1,123 @@
+@media only screen and (max-width:800px) {
+    /* For mobile phones: */
+    .topMenu,header.service,.infoImage,.nerrow,.zmSection,footer,.lFooter,.lastSection {
+      width: 100%;
+    }
+    .menuBox{width: 571px;}
+    .headBox{width: 573px;}
+    ul.homeUl5 {width: 99px;}
+    .firstSection {
+        width: 100%;
+        height: 260px;
+    }
+    .firstImage {
+        width: 100%;
+        height: 399px;
+    }
+    .firstInfo {width: 321px;}
+    .firstInfo {font-size: 12px;}
+    .ser-container {width: 670px;}
+    .serviceBox {width: 158px; margin-right: 7px;}
+    
+    .serviceBox i {
+    width: 54px;
+    font-size: 40px;
+    }
+    .serviceBox p {
+        font-family: 'Langar', cursive;
+        font-size: 13px;
+        text-align: center;
+    }
+    .infoImage {height: 664px;}
+    .imageContainer {
+        width: 449px;
+        height: 629px;
+        padding: 8px;
+        box-shadow: inset -2px -1px 10px 0px black;
+    }
+    .photoInfo {
+        position: relative;
+        bottom: 596px;
+        right: 49px;
+    }
+    .photo {
+        margin-top: 284px;
+        margin-left: 17px;
+    }
+    .photoInfo h1 {font-size: 18px;}
+
+    .nerrow {
+        width: 100%;
+        height: 370px;
+    }
+
+    .nerrowContainer {
+        width: 696px;
+        height: 337px;
+    }
+    .main {
+        width: 450px;
+        height: 290px;
+        margin: auto;
+    }
+    .box {
+        width: 210px;
+        margin-left: 7px;
+        position: relative;
+        bottom: 275px;
+        padding: 19px 0px;
+    }
+
+    .zmSection {height: 600px;}
+    .zmContainer {width: 560px;}
+    .zup h1 {
+        font-size: 28px;
+        width: 550px;
+        height: 37px;
+        margin: auto;
+        position: absolute;
+        display: block;
+    }
+
+    .zup p {
+        width: 550px;
+        height: 80px;
+        position: absolute;
+        display: block;
+        top: 33px;
+    }
+    .zoom {
+        width: 542px;
+        position: relative;
+        bottom: 34px;
+    }
+    .zoom img {
+        width: 542px;
+        height: 308px;
+    }
+    .iconBox {left: -78px;}
+    .zdwn p {
+        width: 616px;
+        position: absolute;
+        display: block;
+        left: -50px;
+        height: 53px;
+    }
+    footer{height: 776px;}
+    .fContainer {width: 471px; height: 758px;}
+    .lFcontainer {width: 700px;}
+    .lFthree {width: 500px;}
+    .lFone {margin-left: 30px;}
+    .lFtwo {left: 34px;}
+    .logo2,.logo2 h1 {width: 116px;}
+    .lFfour {right: 36px;}
+    .lFcontainer:hover .lFfour {width: 63px;}
+    .lFfive {left: 315px;}
+
+    .lastSection {height: 970px;}
+    .lastContainer {
+        width: 634px;
+        height: 953px;
+        padding: 10px 0px;
+    }
+}
