@@ -126,11 +126,11 @@ li a:hover,li i:hover{
 
 .firstSection{
     width: 100%;
-    height: 330px;
+    height: 540px;
 }
 .firstImage{
     width: 100%;
-    height: 330px;
+    height: 540px;
     background: linear-gradient(45deg,black,transparent),url(lion.jpg);
     background-repeat: no-repeat;
     background-position: center center;
