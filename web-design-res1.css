@@ -3,6 +3,7 @@
     .topMenu,header.service,.infoImage,.nerrow,.zmSection,footer,.lFooter,.lastSection {
       width: 100%;
     }
+    header{z-index:1;}
     .menuBox{width: 571px;}
     .headBox{width: 573px;}
     ul.homeUl5 {width: 99px;}
