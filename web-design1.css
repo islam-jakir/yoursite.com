@@ -361,7 +361,7 @@ li a:hover,li i:hover{
 .nerrow{
     width: 100%;
     height: 260px;
-    background: linear-gradient(0deg,#00000070,#000000e0),url(wallpaper/fishman.jpg);
+        background: linear-gradient(0deg,#00000070,#00ff82e8),url(wallpaper/fishman.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
