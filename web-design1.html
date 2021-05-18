@@ -2,420 +2,368 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site Name</title>
-    <link href="web-design1.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="icon/css/font-awesome.min.css">
-	<link rel="stylesheet" href="icon/css/all.min.css">
-    <link href="aos.css" rel="stylesheet" type="text/css">
-    <script src="aos.js"></script>
-    <link href="web-design-res1.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div class="topMenu">
-    <div class="menuBox">
-        <div class="phone">
-            <i title="Mobile" class="fa fa-phone"> <a title="Mobile" href="tel:+8801884042439">+8801884-042439</a></i>
-        </div>
-        <div class="email">
-            <i title="Email" class="fa fa-envelope"> <a title="Email" href="muhammadislamjakir40@gmail.com">muhammadislamjakir40@gmail.com</a></i>
-        </div>
-        <div class="icon">
-            <a title="facebook" href="https://www.facebook.com/muhammad.islamjakir.3/"><i class="fab fa-facebook"></i></a>
-            <a title="page" href="https://www.facebook.com/earningsourchcode"> <i class="fa fa-flag-checkered"></i></a>
-            <a title="about me!" href="https://about.me/muhammadislamjakir"><i class="fa fa-info-circle"></i></a>
-        </div>
-    </div>
-</div>
-<header>
-    <div class="headBox">
-        <div class="logo">
-            <h1>LOGO</h1>
-        </div>
-        <div class="menuBar">
-            <li><a href="#">home</a>
-                <ul class="homeUl">
-                    <li><a href="#">home</a></li>
-                    <li><a href="profile.php">profile</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">login</a></li>
-                </ul>
-            </li>
-            <li><a href="#">profile</a>
-                <ul class="homeUl2">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">profile</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">login</a></li>
-                </ul>
-            </li>
-            <li><a href="#">project</a>
-                <ul class="homeUl3">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">profile</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">login</a></li>
-                </ul>
-            </li>
-            <li><a href="#">service</a>
-                <ul class="homeUl4">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">profile</a></li>
-                    <li><a href="#">project</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">login</a></li>
-                </ul>
-            </li>
-            <li><a href="#">user</a>
-                <ul class="homeUl5">
-                    <li><a href="login.php">login <i class="fa fa-sign-in-alt"></i></a></li>
-                    <li><a href="sinup.php"><i class="fa fa-star"> signup</i></a></li>
-                </ul>
-            </li>
-            <li><i class="fa fa-search"></i></li>
-        </div>
-    </div>
-</header>
+    <script src="my properties/website/on/Download/jquery-3.5.1.min.js"></script>
+    <link href="icon/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="icon/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <title>chec</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;font-family: 'Source Sans Pro', sans-serif;}
+.lesson_box{display: none;}
+section#student_page {
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    text-align: center;
+}
+.chapter_wrapper {
+    width: 1140px;
+    height: 100%;
+    margin: auto;
+    background: #f0f3f5;
+    padding: 8px;
+}
+.chapter_box {
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+.chapter_box span:first-child {float: left;}
+.chapter_box i {font-size: 20px;}
+.lesson_box {
+    width: fit-content;
+    height: fit-content;
+}
+.lesson_cont {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.lesson_cont span {
+    float: left;
+    position: relative;
+    left: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+a#edit {
+    margin-right: 30px;
+    color: green;
+    cursor: pointer;
+    position: relative;
+    left: 27px;
+}
+.read_box {
+    width: 960px;
+    height: 560px;
+    background: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -1px #0000005c;
+    padding: 8px;
+    display: none;
+}
+.read_cont {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    box-shadow: inset 0px 0px 13px -1px #0000009e;
+    border-radius: 8px;
+}
+.read_top {
+    width: 100%;
+    height: 44px;
+    background: white;
+    padding: 10px 0px;
+    border-radius: 8px 8px 0px 0px;
+}
+.read_top span {
+    color: #333;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+.read_top span:hover{transform: translate(-5px);}
+.edit_read {
+    width: 20px;
+    height: 20px;
+    float: right;
+    position: relative;
+    right: 24px;
+}
+.edit_now {
+    width: 145px;
+    height: 29px;
+    position: relative;
+    right: 135px;
+    top: 5px;
+    padding: 5px 0px;
+    background: #9a9898;
+    border-radius: 6px;
+    display: none;
+}
+.dlt_read span {color: blue;}
+a#dlt_read_now {
+    cursor: pointer;
+    color: white;
+}
+a#dlt_read_now:hover{color: red;}
+.edition {
+    width: 275px;
+    height: 168px;
+    overflow: hidden;
+    background: black;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 51px -5px #00000091;
+    position: relative;
+    right: 110px;
+    top: 15px;
+}
+input#checkPicE {display: none;}
+form#shop_name_edit label {
+    background: yellowgreen;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+input#namA {
+    height: 28px;
+    width: 64%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    margin-top: 8px;
+}
+textarea#decp {
+    width: 64%;
+    border-radius: 4px;
+    margin-top: 4px;
+    height: 44px;
+    padding: 2px;
+}
+input[type="submit"] {
+    width: 100px;
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.read_now {
+    width: 99%;
+    height: 78%;
+    margin: auto;
+    text-align: center;
+    overflow-y: auto;
+}
+.rad_img {
+    width: 50%;
+    margin: auto;
+    height: 250px;
+    object-fit: cover;
+}
+.rad_img img {
+    width: 99%;
+    height: 245px;
+    object-fit: contain;
+}
+.read_txt {
+    width: 99%;
+    margin: auto;
+    max-height: 160px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.read_txt p:first-letter {
+    color: green;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.read_info {
+    width: 99%;
+    height: 70px;
+    margin: auto;
+    padding: 4px;
+}
+.read_rating {
+    width: 650px;
+    height: 22px;
+}
+.read_rating span {
+    color: green;
+    font-weight: 600;
+}
+input#read_rate {
+    width: 200px;
+    position: relative;
+    right: 70px;
+    top: 0px;
+    height: 5px;
+}
+button#lov {
+    position: relative;
+    right: 55px;
+    cursor: pointer;
+    background: blue;
+    color: white;
+    border: none;
+    width: 38px;
+    height: 19px;
+    border-radius: 3px;
+}
+.img_zm {
+    position: absolute;
+    width: 960px;
+    height: 400px;
+    z-index: 1;
+    bottom: 33px;
+    right: 203px;
+    background: #000000b5;
+    border-radius: 10px;
+    display: none;
+}
+.img_zm img {
+    width: 960px;
+    height: 400px;
+    object-fit: contain;
+}
+.img_zm i {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.edit_now span {
+    position: relative;
+    right: 80px;
+    cursor: pointer;
+}
+span.in_me {position: relative;left: -10px;}
 
-<section class="firstSection">
-    <div class="firstImage">
-        <div class="firstInfo" data-aos="fade-right" data-aos-duration="900" >
-            <h1>web design and development team</h1>
-            <p> As practice shows, programming alone isn't enough to make a website work for you.
-                That's why many stakeholders pay great attention to design and marketing.
-                Respectively, your web development team should fit the project's objectives
-                and consist of specialists with diverse skills and knowledge.
 
-            </p>
-            <a class="fLink" title="Youtube" href="https://www.youtube.com/channel/UCwpKde0L4bfzS2tjwuNEOkg">watching now</a>
-        </div>
-    </div>
-</section>
-<div class="get">
-    <h1>company title</h1>
-</div>
-<section class="service">
-    <div class="ser-container">
-        <div class="serviceBox">
-            <i id="iA" class="far fa-file-code"></i>
-            <h1>basic design</h1>
-            <p>The strategic importance and project budget for your 
-                web efforts will largely determine the size and skill 
-                depth of your web site development team. Even for a smaller 
-                project, however, you’ll n
-            </p>
-        </div>
-        <div class="serviceBox">
-            <i class="fa fa-file-code"></i>
-            <h1>advance design</h1>
-            <p>The strategic importance and project budget for your 
-                web efforts will largely determine the size and skill 
-                depth of your web site development team. Even for a smaller 
-                project, however, 
-            </p>
-        </div>
-        <div class="serviceBox">
-            <i class="fab fa-css3"></i>
-            <h1>design and development</h1>
-            <p>The strategic importance and project budget for your 
-                web efforts will largely determine the size and skill 
-                depth of your web site development team. Even for a smaller 
-                
-            </p>
-        </div><div class="serviceBox">
-            <i class="fa fa-code"></i>
-            <h1>advance design and development</h1>
-            <p>The strategic importance and project budget for your 
-                web efforts will largely determine the size and skill 
-                depth of your web site development team. Even for a smaller 
-                project, 
-            </p>
-        </div>
-    </div>
-</section>
-<section class="infoImage">
-    <div class="imageContainer">
-        <div class="photo" data-aos="fade-up-right" data-aos-duration="1200">
-            <img src="wallpaper/web10.jpg">
-        </div>
-        <div class="photoInfo" data-aos="fade-down" data-aos-duration="800">
-            <h1>web design and development company</h1>
-            <p>Our team used websitesetup.org 
-                to launch our WordPress website back in 2021. Their
-                guides are extremely helpful and thorough. We were
-                able to get our website set up quickly,
-            to launch our WordPress website back in 2021. </p>
-            <a class="learnmore" title="learn more" href="#">Learn more <i class="fa fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-<section class="nerrow">
-    <div class="nerrowContainer">
-        <div class="main">
-            <div data-aos="fade-down-right" data-aos-duration="1000">
-                <div class="box">
-                    <i class="fab fa-accusoft"></i>
-                    <h1 id="dui">2021</h1>
-                    <h4>any here</h4>
-                </div>
-                <div class="box">
-                    <i class="fab fa-asymmetrik"></i>
-                    <h1 id="tin">2022</h1>
-                    <h4>any here</h4>
-                </div>
-            </div>
-            <div data-aos="fade-down-left" data-aos-duration="1000">
-                <div class="box">
-                    <i class="fab fa-alipay"></i>
-                    <h1 id="char">2023</h1>
-                    <h4>any here</h4>
-                </div>
-                <div class="box">
-                    <i class="fab fa-accusoft"></i>
-                    <h1 id="pach">2024</h1>
-                    <h4>any here</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="zmSection">
-    <div class="zmContainer">
-        <div data-aos="flip-left" data-aos-duration="900">
-        <div class="zup">
-            <h1>as your wish insert here!</h1>
-            <p>Web development is the work involved in developing a Web site for the Internet or an intranet.
-                 Web development can range from developing a simple single static page of plain text to complex 
-                 Web-based Internet 
-                applications, electronic businesses, and social network services.</p>
-        </div>
-        </div>
-        <div class="zoom">
-            <div data-aos="flip-up" data-aos-duration="900">
-                <img src="wallpaper/web2.jpg"/>
-            </div>
-            <div class="iconBox">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-google"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-        <div class="zdwn">
-            <p>Web development is the work involved in developing a Web site for the Internet or an intranet.
-                Web development can range from developing a simple single static page of plain text to complex 
-                Web-based Internet 
-               applications, electronic businesses, and social network services.</p>
-        </div>
-    </div>
-</section>
-<section class="lastSection">
-    <div class="lastContainer">
-        <div data-aos="zoom-out-right" data-aos-duration="900">
-            <div class="lastZoom">
-                <img src="wallpaper/web8.jpg">
-                <div class="lastInfo">
-                    <h3>title this image</h3>
-                    <a href="#">More here</a>
-                </div>
-            </div>
-            <div class="lastZoom">
-                <img src="wallpaper/web3.jpg">
-                <div class="lastInfo">
-                    <h3>title this image</h3>
-                    <a href="#">More here</a>
-                </div>
-            </div>
-            <div class="lastZoom">
-                <img src="wallpaper/web4.jpg">
-                <div class="lastInfo">
-                    <h3>title this image</h3>
-                    <a href="#">More here</a>
-                </div>
-            </div>
-        </div>
-        <div data-aos="zoom-out-left" data-aos-duration="900">
-            <div class="lastZoom">
-                <img src="wallpaper/web5.jpg">
-                <div class="lastInfo">
-                    <h3>title this image</h3>
-                    <a href="#">More here</a>
-                </div>
-            </div>
-            <div data-aos="flip-up" data-aos-duration="900">
-                <div class="lastZoom">
-                    <img src="wallpaper/web6.jpg">
-                    <div class="lastInfo">
-                        <h3>title this image</h3>
-                        <a href="#">More here</a>
-                    </div>
-                </div>
-            </div>
-            <div class="lastZoom">
-                <img src="wallpaper/web7.jpg">
-                <div class="lastInfo">
-                    <h3>title this image</h3>
-                    <a href="#">More here</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<br>
-<div class="scroll"><marquee onmouseover="this.stop();" onmouseout="this.start();">someting insert here about your company...!</marquee></div>
-<br>
-<footer>
-    <div class="fContainer">
-        <div class="left">
-            <div data-aos="flip-left" data-aos-duration="900">
-                <div class="part">
-                    <h1>contract</h1>
-                    <a title="phone" href="tel:+8801884042439"><h3>+8801884-042439</h3></a>
-                    <hr/>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="900">
-                <div class="part2">
-                    <h3>follow us</h3>
-                    <div class="fIcon">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="flip-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900">
-                <div class="part3">
-                    <a title="feture" href="#"><h3>privacy policy</h3></a><hr/>
-                    <a title="feture" href="#"><h3>terms of use</h3></a><hr/>
-                    <a title="feture" href="#">feture</a>
-                    <hr/>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div data-aos="fade-up" data-aos-duration="900">
-                <div class="part">
-                    <h1>public comment</h1>
-                    <input type="text" placeholder="your name" required/>
-                    <input type="email" placeholder="enter email" required/>
-                    <textarea title="comment write here....."> write a Comment...!</textarea>
-                    <input type="submit"  value="submit"/>
-                </div>
-            </div>
-            <div data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-duration="900">
-                <div class="part2">
-                    <h3>user service</h3>
-                    <a title="learn more" href="#">learn more <i class="fa fa-arrow-right"></i></a> 
-                    <hr/>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="900">
-                <div class="part3">
-                    <h3>live support</h3>
-                    <div class="fIcon">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                        <a title="about this site" href="#">about us</a>
-                        <hr/> 
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<section class="lFooter" data-aos="fade-up">
-    <div class="lFcontainer">
-        <div class="lFone">
+/*responsive code*/
+/*when screen size max 1200px*/
+@media only screen and  (max-width: 1200px) {.img_zm{right: 100px;}}
 
-        </div>
-        <div class="lFtwo">
-            
-        </div>
-        <div class="lFthree">
-            <div class="lFicon">
-                <div class="lastLI">
-                    <h3>support</h3>
-                    <a href="#"><i class="fab fa-facebook"></i> facebook</a>
-                    <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-                    <a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
-                    <a href="#"><i class="fab fa-google"></i>google</a>
-                    <a href="#"><i class="fab fa-youtube"></i>youtube</a>
-                </div>
-            </div>
-            <div class="logo2">
-                <h1>logo</h1>
-            </div>
-            <div class="lFicon2">
-                <div class="lastLI">
-                    <h3>support</h3>
-                    <a href="#"><i class="fab fa-facebook"></i> facebook</a>
-                    <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-                    <a href="#"><i class="fab fa-whatsapp"></i>whatsapp</a>
-                    <a href="#"><i class="fab fa-google"></i>google</a>
-                    <a href="#"><i class="fab fa-youtube"></i>youtube</a>
-                </div>
-            </div>
-        </div>
-        <div class="lFfour">
-            
-        </div>
-        <div class="lFfive">
-            
-        </div>
-    </div>
-</section>
-
-<script>
-AOS.init();
-function animateValue(id, start, end, duration) {
-    // assumes integer values for start and end
-    
-    var obj = document.getElementById(id);
-    var range = end - start;
-    // no timer shorter than 50ms (not really visible any way)
-    var minTimer = 50;
-    // calc step time to show all interediate values
-    var stepTime = Math.abs(Math.floor(duration / range));
-    
-    // never go below minTimer
-    stepTime = Math.max(stepTime, minTimer);
-    
-    // get current time and calculate desired end time
-    var startTime = new Date().getTime();
-    var endTime = startTime + duration;
-    var timer;
-  
-    function run() {
-        var now = new Date().getTime();
-        var remaining = Math.max((endTime - now) / duration, 0);
-        var value = Math.round(end - (remaining * range));
-        obj.innerHTML = value;
-        if (value == end) {
-            clearInterval(timer);
-        }
-    }
-    
-    timer = setInterval(run, stepTime);
-    run();
+/*when screen size max 1140px*/
+@media only screen and  (max-width: 1140px) {
+    .chapter_wrapper{width: 960px;}
+    .img_zm{right: 130px;}
+    .img_zm,.img_zm img{width: 900px;}
 }
 
-document.querySelector("#dui").innerHTML = animateValue("dui", 100, 2021, 2000);
-document.querySelector("#tin").innerHTML = animateValue("tin", 100, 2022, 2000);
-document.querySelector("#char").innerHTML = animateValue("char", 100, 2023, 2000);
-document.querySelector("#pach").innerHTML = animateValue("pach", 100, 2024, 2000);
+/*when screen size max 1100px*/
+@media only screen and  (max-width: 1100px) {}
 
+/*when screen size max 992px*/
+@media only screen and  (max-width: 992px) {
+    .chapter_wrapper,.read_box{width: 100%;}
+    .img_zm, .img_zm img {width: 99%;right: .4%;}
+}
 
-    
+/*when screen size max 800px*/
+@media only screen and  (max-width: 800px) {}
+
+/*when screen size max 768px*/
+@media only screen and  (max-width: 768px) {}
+
+/*when screen size max 720px*/
+@media only screen and  (max-width: 720px) {}
+
+/*when screen size max 668px*/
+@media only screen and  (max-width: 668px) {
+    .read_rating{width: 100%;}
+}
+
+/*when screen size max 576px*/
+@media only screen and  (max-width: 576px) {}
+
+/*when screen size max 500px*/
+@media only screen and  (max-width: 500px) {}
+</style>
+</head>
+<body>
+<section id="student_page">
+<div class="chapter_wrapper">
+    <div class="chapter_box">
+        <span>Chapter2</span><span><i class="fa fa-times"></i></span>
+        <div class="lesson_box">
+            <div class="lesson_cont">
+                <a id="edit"><i class="fas fa-minus-circle"></i></a> <span>lesson</span> <a id="edit"><i class="fa fa-times"></i></a>
+                <div class="read_box">
+                    <div class="read_cont">
+                        <div class="read_top">
+                            <span><i class="fa fa-arrow-left"></i></span<span>lesson 01</span>
+                            <div class="edit_read">
+                                <span><i class="fas fa-cog"></i></span>
+                                <div class="edit_now">
+                                    <span class="in_me"><i class="fas fa-chevron-right"></i></span>
+                                    <div class="dlt_read"><span id="me_this"><i class="fas fa-pencil-alt"></i>Edit</span><a id="dlt_read_now"><i class="far fa-trash-alt"></i></a></div>
+                                    <div class="edition">
+                                        <i class="fa fa-times"></i>
+                                        <form id="shop_name_edit" action="#" enctype="multipart/form-data">
+                                            <label>
+                                            <i class="far fa-images"></i> Change read photo
+                                                <input type="file" accept="image/*" onchange="picE_view(event)" name="shop_pro" id="checkPicE"/>
+                                            </label><br/>
+                                            <input type="text" placeholder="Read title..." maxlength="30" minlength="2" name="shpName" id="namA"/><br/>
+                                            <textarea type="text" placeholder="Description" maxlength="300" minlength="5" name="shpDes"  id="decp"></textarea><br/>
+                                            <input type="submit" value="Update"/>
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="read_now">
+                            <div class="rad_img">
+                                <img src="wallpaper/fishman.jpg" width="300px" height="200px" alt="Loading.."/>
+                                <div class="img_zm"><i class="fa fa-times-circle"></i><img src="wallpaper/fishman.jpg" width="" height="" alt="Loading.."/></div>
+                            </div>
+                            <div class="read_txt">
+                                <p>this is read text</p>
+                            </div>
+                        </div>
+                        <div class="read_info">
+                            <div class="read_rating">
+                                <span><i class="fas fa-heartbeat"></i> Love rating:</span>
+                                <input type="range" value="10" id="read_rate"/><label id="show_range"></label>
+                                <button id="lov">Love</button>
+                                <a href="#">Send a problem</a>
+                            </div>
+                            <div class="read_date">
+                                <span>sunday, 40:40:40pm, 40-40-4040</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<script>
+$(document).ready(function(){
+    $('.chapter_box').click(function(){
+        $('.lesson_box', this).css("display","block");
+    });
+    $('.lesson_box').click(function(){
+        $('.read_box', this).css("display","block");
+    });
+    $('.edit_read').click(function(){
+        $('.edit_now', this).css("display","block");
+    });
+    $('.rad_img').click(function(){
+        $('.img_zm', this).css("display","block");
+    });
+    $('#me_this').click(function(){
+        $('.edition', this).css("display","block");
+    });
+});
 </script>
 </body>
 </html>
