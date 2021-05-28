@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<style>
+*{margin: 0;padding: 0;box-sizing: border-box;text-decoration: none;}
+section#up {
+    width: 100%;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.up_cnt {
+    width: 1140px;
+    height: 400px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: auto;
+}
+.last-content {
+    width: 358px;
+    height: 228px;
+    border-radius: 20px;
+    background: pink;
+    display: flex;
+    place-items: center;
+    float: left;
+    text-align: center;
+    margin: 5px auto;
+    transition: .4s;
+    margin-right: 0px;
+    margin-left: 13px;
+    padding: 10px;
+}
+.last-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid
+}
+
+a.lastLink {
+    text-transform: capitalize;
+    transition: .8s;
+    text-decoration: none;
+    font-size: 30px;
+    color: red;
+    opacity: .3;
+}
+.up_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-cnt {
+    height: 100%;
+    width: 338px;
+}
+input#checkPicE{display: none;}
+.left-cnt {
+    height: 100%;
+    width: 338px;
+    box-shadow: 0px 0px 44px -13px #00000094;
+    border-radius: 8px;
+    padding: 20px;
+}
+.left-cnt h2 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-family: arial;
+}
+.left-cnt form {
+    width: 100%;
+    height: 200px;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 35px;
+}
+
+label.file_label {
+    font-size: 15px;
+    background: lightblue;
+    padding: 7px 60px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .1s;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, blue 50%,transparent 50%);
+}
+label.file_label:hover{color: white;background-position: 0% 100%;}
+
+input[type="text"] {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    height: 33px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: wheat;
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+}
+textarea {
+    width: 98%;
+    margin: auto;
+    margin-top: 10px;
+    height: 100px;
+    padding: 5px;
+    resize: none;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    background: wheat;
+}
+button {
+    width: 98%;
+    margin: auto;
+    margin-top: 7px;
+    height: 27px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 17px -9px;
+    cursor: pointer;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #0000ffcc 50%, transparent);
+}
+input[type="text"]:hover,textarea:hover {border: 2px solid blue;}
+input[type="text"]:focus,textarea:focus {background: white;}
+p.desc {
+    overflow: hidden;
+    width: 190px;
+}
+
+
+
+
+
+@media only screen and  (max-width: 1140px) {.up_cnt{width: 99%;}}
+@media only screen and  (max-width: 768px) {
+    section#up{height: 650px;}
+    .up_cnt {
+        width: 99%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .up_box {
+        display: grid;
+        place-items: center;
+    }
+}
+
+
+
+
+
+</style>
+<body>
+<section id="up">
+  <div class="up_cnt">
+    <div class="up_box">
+      <div class="left-cnt">
+      <h2>product info</h2>
+        <form method="POST" action="product_info.php">
+        <label class="file_label">
+          
+          <b id="meE">Add photo</b>
+          <input type="file" accept="image/*" name="prod" onchange="picE_view(event)" id="checkPicE" required/>
+        </label>
+        <br/>
+        <input type="text" name="proName" placeholder="Product name" id="namA" maxlength="20" minlength="2" required/><br/>
+        <textarea name="dit" id="decp" placeholder="Description..."></textarea><br/>
+        <button>Update</button>
+        </form>
+      </div>
+      <div class="righ">
+        <div class="last-content">
+            <div class="last-img">
+              <img id="picE" src="what-is-a-product-removebg-preview.png"/>
+            </div>
+            <div class="last-info">
+                <h2 id="addNam">Name</h2><br/>
+                <p class="desc">
+                    product include here...product include here...product include here..
+                    product include here...product include here...product include here..
+                </p>
+                <a href="#" class="lastLink">Buy now</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="create_shop.js" type="text/javascript"></script>
+<script src="check_create_shops.js" type="text/javascript"></script>
+<script>
+
+//bottom
+document.querySelector("#decp").addEventListener("keyup",function(){
+    var emptyTitle = document.querySelector(".desc").innerHTML = this.value;
+    if(emptyTitle == 0){
+        document.querySelector(".desc").innerHTML = "<span style='cursor: not-allowed;color:gray;font-size:14px;text-transform: uppercase;'>Description write here...</span>";
+    }
+});
+</script>
+</body>
+</html>
